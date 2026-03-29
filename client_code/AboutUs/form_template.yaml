@@ -8,14 +8,18 @@ components:
   properties: {bold: true, foreground: '#0e65d8', text: Sioux Center High School Lost and Found Center}
   type: Label
 - components:
-  - layout_properties: {full_width_row: false, grid_position: 'KOLZXA,VSMXIY'}
+  - layout_properties: {grid_position: 'ONJCUQ,EZBILE'}
     name: about_us_label
     properties: {align: center, background: '#0e65d8', bold: true, font_size: 24, text: About Us}
     type: Label
   - layout_properties: {grid_position: 'ZOQGGJ,NIAECC'}
-    name: image_1
-    properties: {}
+    name: about_us_image
+    properties: {source: _/theme/fbla.jpg}
     type: Image
+  - layout_properties: {grid_position: 'EOZODS,JBPMKX'}
+    name: label_1
+    properties: {align: center, role: body, text: This website is created by SCHS students Samuel McCord and Jack Dornbierer to help students find lost items around the campus. Contact samuel.mccord@scwarriors.org or jack.dornbierer@scwarriors.org to learn more about this site.}
+    type: Label
   layout_properties: {slot: default}
   name: column_panel_1
   properties: {background: ''}
