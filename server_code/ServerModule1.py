@@ -1,3 +1,4 @@
+  # These are variables anvil automatically creates giving properties on whats one the form. 
 from anvil import *
 import anvil.secrets
 import anvil.email
@@ -10,6 +11,8 @@ import anvil.tables.query as q
 from datetime import datetime
 from anvil.tables import app_tables
 
+  # This function calls the anvil server and defines what the variable add_item is.
+  # This table of items calls the built in data tables, giving properties to call later in the code. 
 @anvil.server.callable
 def add_item(item_dict):
   return app_tables.items.add_row(
