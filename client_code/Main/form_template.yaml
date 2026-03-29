@@ -4,7 +4,7 @@ components:
     name: image_1
     properties: {background: '#e17f0e', source: _/theme/SC Warriors Logo.webp}
     type: Image
-  - layout_properties: {grid_position: 'UWVPNB,DWMUOA'}
+  - layout_properties: {grid_position: 'VMUVHA,SOXFSN'}
     name: report_button
     properties: {background: 'theme:On Primary', foreground: '#0e65d8', text: Report Lost/Found Items}
     type: Button
@@ -32,7 +32,7 @@ components:
     properties: {background: '', foreground: '#0e65d8', text: Home Page}
     type: Button
   - event_bindings: {}
-    layout_properties: {grid_position: 'XOVYJY,OHIWJI'}
+    layout_properties: {grid_position: 'SILSDU,UPYUSE'}
     name: about_us_button
     properties: {foreground: '#0e65d8', text: About Us}
     type: Button

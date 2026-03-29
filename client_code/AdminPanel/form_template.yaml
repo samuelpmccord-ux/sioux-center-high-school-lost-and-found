@@ -1,5 +1,5 @@
 components:
-- layout_properties: {full_width_row: true, grid_position: 'JAEDNQ,AQMRIN'}
+- layout_properties: {grid_position: 'RBBORB,DARBXW'}
   name: title_label
   properties: {align: center, background: '#0e65d8', bold: true, font_size: 24, text: 'Sioux Center High School Lost and Found Center:  Admin View '}
   type: Label
