@@ -1,0 +1,58 @@
+components:
+- components:
+  - layout_properties: {col_xs: 6, row: UGWJFO, width_xs: 5}
+    name: name_label
+    properties: {text: ''}
+    type: Label
+  - layout_properties: {col_xs: 0, row: XWUNMN, width_xs: 6}
+    name: image_display
+    properties: {display_mode: shrink_to_fit, height: 285.79998779296875}
+    type: Image
+  - layout_properties: {col_xs: 6, row: XWUNMN, width_xs: 5}
+    name: title_label
+    properties: {align: left, text: ''}
+    type: Label
+  - layout_properties: {col_xs: 6, row: XWUNMN, width_xs: 5}
+    name: type_label
+    properties: {align: left, text: ''}
+    type: Label
+  - layout_properties: {col_xs: 7, row: XWUNMN, width_xs: 5}
+    name: date_label
+    properties: {align: left, text: ''}
+    type: Label
+  - layout_properties: {col_xs: 1, row: SITJMT, width_xs: 10}
+    name: location_label
+    properties: {text: ''}
+    type: Label
+  - layout_properties: {col_xs: 1, row: KDBJSA, width_xs: 10}
+    name: description_label
+    properties: {text: ''}
+    type: Label
+  - layout_properties: {col_xs: 1, row: MIZUAZ, width_xs: 10}
+    name: contact_label
+    properties: {text: ''}
+    type: Label
+  - event_bindings: {}
+    layout_properties: {col_xs: 1, row: JJTOJY, width_xs: 3}
+    name: returned_button
+    properties: {align: center, background: 'theme:On Primary', foreground: '#0e65d8', text: Returned}
+    type: Button
+  - event_bindings: {}
+    layout_properties: {col_xs: 3, row: JJTOJY, width_xs: 4}
+    name: approve_button
+    properties: {align: center, background: 'theme:On Primary', foreground: '#0e65d8', text: Approve}
+    type: Button
+  - event_bindings: {}
+    layout_properties: {col_xs: 1, row: JJTOJY, width_xs: 3}
+    name: delete_button
+    properties: {align: center, background: 'theme:On Primary', foreground: '#0e65d8', text: Delete}
+    type: Button
+  layout_properties: {grid_position: 'VNQAOW,QEPNVN'}
+  name: grid_panel_1
+  properties: {background: '#c2d3f5'}
+  type: GridPanel
+container:
+  data_bindings: []
+  event_bindings: {}
+  type: ColumnPanel
+is_package: true

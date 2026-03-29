@@ -1,0 +1,116 @@
+allow_embedding: false
+correct_dependency_ids: {}
+db_schema:
+  items:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: title
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: description
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: item_type
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: location
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: date
+      type: date
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: contact
+      type: string
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: image
+      type: media
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: created
+      type: datetime
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: name
+      type: string
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: approved
+      type: bool
+    - admin_ui: {order: 10, width: 200}
+      client_hidden: false
+      name: returned
+      type: bool
+    server: full
+    title: items
+  users:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: email
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: enabled
+      type: bool
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: last_login
+      type: datetime
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: password_hash
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: n_password_failures
+      type: number
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: confirmed_email
+      type: bool
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: is_admin
+      type: bool
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: remembered_logins
+      type: simpleObject
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: signed_up
+      type: datetime
+    server: full
+    title: Users
+dependencies: []
+metadata: {description: This app helps allow students to find lost items around the campus., logo_img: 'asset:SC Warriors Logo.webp', title: Sioux Center High School Lost and Found}
+name: Clone of Sioux Center High School Lost and Found
+package_name: Sioux_Center_High_School_Lost_and_Found
+renamed: true
+runtime_options:
+  client_version: '3'
+  legacy_features: {bootstrap3: true, class_names: true}
+  server_spec: {base: python310-minimal}
+  version: 3
+secrets: null
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config: {allow_remember_me: true, allow_signup: false, confirm_email: true, enable_automatically: true, remember_me_days: 30, require_secure_passwords: true, use_email: true, use_google: true}
+  server_config: {user_table: users}
+  source: /runtime/services/anvil/users.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/google.yml
+startup: {module: Main, type: form}
+startup_form: null

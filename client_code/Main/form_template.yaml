@@ -1,0 +1,53 @@
+components:
+- components:
+  - layout_properties: {grid_position: 'UZWPTD,WWJDXY'}
+    name: image_1
+    properties: {background: '#e17f0e', source: _/theme/SC Warriors Logo.webp}
+    type: Image
+  - layout_properties: {grid_position: 'UWVPNB,DWMUOA'}
+    name: report_button
+    properties: {background: 'theme:On Primary', foreground: '#0e65d8', text: Report Lost/Found Items}
+    type: Button
+  - layout_properties: {grid_position: 'UEUZTL,DRJBEF'}
+    name: search_button
+    properties: {background: 'theme:On Primary', foreground: '#0e65d8', text: Search Items}
+    type: Button
+  - event_bindings: {}
+    layout_properties: {grid_position: 'MYIDMN,JUMEJA', row_background: ''}
+    name: admin_button
+    properties: {background: 'theme:On Primary', foreground: '#0e65d8', text: Admin Login}
+    type: Button
+  layout_properties: {slot: default}
+  name: column_panel_1
+  properties: {background: '#e17f0e'}
+  type: ColumnPanel
+- layout_properties: {slot: title}
+  name: title_label
+  properties: {align: left, background: '', bold: true, foreground: '#0e65d8', text: Sioux Center High School Lost and Found Center}
+  type: Label
+- components:
+  - event_bindings: {}
+    layout_properties: {grid_position: 'YCGDGW,QIPTGV'}
+    name: home_page_button
+    properties: {background: '', foreground: '#0e65d8', text: Home Page}
+    type: Button
+  - event_bindings: {}
+    layout_properties: {grid_position: 'XOVYJY,OHIWJI'}
+    name: about_us_button
+    properties: {foreground: '#0e65d8', text: About Us}
+    type: Button
+  - data_bindings: []
+    event_bindings: {}
+    layout_properties: {grid_position: 'AZQEHS,AFCKYW'}
+    name: SCHS_school_page_link
+    properties: {align: center, foreground: '#0e65d8', italic: false, text: SCHS School Page LInk, url: 'https://www.scwarriors.org/en-US'}
+    type: Link
+  layout_properties: {slot: left-nav}
+  name: column_panel
+  properties: {background: ''}
+  type: ColumnPanel
+container:
+  data_bindings: []
+  properties: {background: '#e17f0e', border: '', foreground: '', html: '@theme:standard-page.html', visible: true}
+  type: HtmlTemplate
+is_package: true

@@ -1,0 +1,83 @@
+components:
+- layout_properties: {grid_position: 'SCFMOT,QISCKX'}
+  name: lost_found_form_title
+  properties: {align: center, background: 'theme:Primary', bold: true, font_size: 20, italic: false, text: Lost and Found Item Form}
+  type: Label
+- layout_properties: {grid_position: 'JHWVLX,HSFVKP'}
+  name: name_label
+  properties: {bold: true, italic: true, text: 'Enter First and Last Name:', underline: true}
+  type: Label
+- layout_properties: {grid_position: 'SBDRYJ,HJRJMP'}
+  name: name_box
+  properties: {}
+  type: TextBox
+- layout_properties: {grid_position: 'DENQZR,JIKBRB'}
+  name: title_label
+  properties: {bold: true, italic: true, text: 'Name of item:', underline: true}
+  type: Label
+- data_bindings: []
+  event_bindings: {}
+  layout_properties: {grid_position: 'LBYYVZ,ZPEPYG'}
+  name: title_box
+  properties: {font_size: 14, italic: false, placeholder: '', underline: false}
+  type: TextBox
+- layout_properties: {grid_position: 'VTNCHR,UXVLTZ'}
+  name: description_label
+  properties: {bold: true, font_size: 14, italic: true, text: 'Give a brief description of item:', underline: true}
+  type: Label
+- layout_properties: {grid_position: 'IVUJEG,YTVYKP'}
+  name: description_area
+  properties: {font_size: 14}
+  type: TextArea
+- layout_properties: {grid_position: 'DACWOX,CUEGSX'}
+  name: lost_or_found_label
+  properties: {bold: true, italic: true, text: 'Pick if item is lost or found:', underline: true}
+  type: Label
+- data_bindings: []
+  layout_properties: {grid_position: 'KGEAPW,PHLYFI'}
+  name: type_dropdown
+  properties:
+    bold: false
+    italic: false
+    items: [lost, found]
+  type: DropDown
+- layout_properties: {grid_position: 'CTVORU,FTOTNS'}
+  name: location_label
+  properties: {bold: true, italic: true, text: 'Last seen location of item:', underline: true}
+  type: Label
+- layout_properties: {grid_position: 'FGNMHE,PWESJF'}
+  name: location_box
+  properties: {font_size: 14}
+  type: TextBox
+- layout_properties: {grid_position: 'SHTCQQ,SOAEQL'}
+  name: date_label
+  properties: {bold: true, italic: true, text: 'Date item was lost/found:', underline: true}
+  type: Label
+- layout_properties: {grid_position: 'ZPESWZ,ERVZBU'}
+  name: date_picker
+  properties: {}
+  type: DatePicker
+- layout_properties: {grid_position: 'ITVLEF,LZHGYP'}
+  name: contact_label
+  properties: {bold: true, italic: true, text: 'Contact Number and Email:', underline: true}
+  type: Label
+- layout_properties: {grid_position: 'JHSMSY,MMWCQA'}
+  name: contact_box
+  properties: {font_size: 14}
+  type: TextBox
+- layout_properties: {grid_position: 'ZYSAJH,ZHCNFR'}
+  name: image_loader
+  properties: {text: Upload picture of lost/found item}
+  type: FileLoader
+- event_bindings: {}
+  layout_properties: {grid_position: 'QSAQJS,TFXVUA'}
+  name: submit_button
+  properties: {text: Submit Form}
+  type: Button
+- event_bindings: {}
+  layout_properties: {grid_position: 'ROYXLE,XEYYRR'}
+  name: back_button
+  properties: {text: Back to Home Page}
+  type: Button
+container: {type: ColumnPanel}
+is_package: true

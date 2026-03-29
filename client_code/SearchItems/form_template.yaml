@@ -1,0 +1,34 @@
+components:
+- data_bindings: []
+  layout_properties: {full_width_row: true, grid_position: 'ZSVYFL,PWHJMC'}
+  name: search_items_title
+  properties: {align: center, background: '#0e65d8', bold: true, font_size: 20, italic: false, text: Lost and Found Item Catalog, underline: true}
+  type: Label
+- layout_properties: {grid_position: 'GJRJAS,ZXIXLN'}
+  name: search_box
+  properties: {background: 'theme:On Primary', placeholder: 'Search:'}
+  type: TextBox
+- layout_properties: {grid_position: 'GAAJEH,PJLIBY'}
+  name: filter_dropdown
+  properties:
+    background: theme:On Primary
+    items: [lost, found]
+  type: DropDown
+- data_bindings: []
+  layout_properties: {full_width_row: false, grid_position: 'AZRTIO,AOAZAA'}
+  name: results_panel
+  properties: {background: '#c2d3f5', item_template: ItemRow}
+  type: RepeatingPanel
+- layout_properties: {grid_position: 'AGBOFS,RNGWGK'}
+  name: search_button
+  properties: {background: 'theme:On Primary', foreground: '#0e65d8', text: Search}
+  type: Button
+- event_bindings: {}
+  layout_properties: {grid_position: 'QCYZWE,QLUUNY'}
+  name: back_button
+  properties: {background: 'theme:On Primary', foreground: '#0e65d8', text: Back to Home Page}
+  type: Button
+container:
+  properties: {background: '#e17f0e'}
+  type: ColumnPanel
+is_package: true
