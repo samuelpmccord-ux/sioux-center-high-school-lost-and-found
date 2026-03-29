@@ -15,8 +15,6 @@ unique_ids:
     Main: '1774241466051616434772154.2557'
     ReportItem: '1774053932222263935988074.5883'
     SearchItems: '1774053958640602084119379.5845'
-    SearchItems.ItemTemplate1: '1774060678424757356773959.0736'
-    SearchItems.ItemTemplate2: '1774062471872437474888664.27795'
   modules: {}
   scripts: {}
   server_modules:

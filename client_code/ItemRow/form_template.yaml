@@ -1,5 +1,9 @@
 components:
 - components:
+  - layout_properties: {col_xs: 0, row: GBVXLF, width_xs: 12}
+    name: description_label
+    properties: {text: ''}
+    type: Label
   - layout_properties: {col_xs: 0, row: GBVXLF, width_xs: 6}
     name: image_display
     properties: {}
@@ -23,10 +27,6 @@ components:
     type: Label
   - layout_properties: {col_xs: 0, row: EBJPMO, width_xs: 12}
     name: location_label
-    properties: {text: ''}
-    type: Label
-  - layout_properties: {col_xs: 0, row: QXGGRU, width_xs: 12}
-    name: description_label
     properties: {text: ''}
     type: Label
   - layout_properties: {col_xs: 0, row: JQINZQ, width_xs: 12}
