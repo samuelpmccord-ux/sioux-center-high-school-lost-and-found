@@ -42,3 +42,20 @@ class ReportItem(ReportItemTemplate):
 
     alert("Item submitted for Admin Approval!")
     open_form('Main')
+
+    # this function makes sure code works while offline.
+if anvil.server.is_app_online():
+  # safe to call server
+  else:
+    # offline mode
+
+  try:
+    anvil.server.call("add_item", item_dict)
+except anvil.server.AppOfflineError:
+anvil.storage.local.set("pending_items", item_dict)
+
+if anvil.server.is_app_online():
+  pending = anvil.storage.local.get("pending_items")
+  if pending:
+    anvil.server.call("add_item", pending)
+    anvil.storage.local.delete("pending_items")
