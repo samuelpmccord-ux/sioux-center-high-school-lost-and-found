@@ -1,4 +1,6 @@
 from anvil import *
+import anvil.secrets
+import anvil.email
 import anvil.google.auth, anvil.google.drive, anvil.google.mail
 from anvil.google.drive import app_files
 import anvil.users
@@ -77,3 +79,7 @@ def mark_returned(row_id):
   row['returned'] = True
   return True
 
+def form_show(self, **event_args):
+  self.delete_btn.visible = True
+
+  

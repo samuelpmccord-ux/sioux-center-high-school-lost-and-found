@@ -33,6 +33,11 @@ components:
     name: contact_label
     properties: {text: ''}
     type: Label
+  - event_bindings: {}
+    layout_properties: {col_xs: 4, row: GAFODU, width_xs: 4}
+    name: delete_button
+    properties: {background: 'theme:On Primary', foreground: '#0e65d8', text: Delete Item}
+    type: Button
   layout_properties: {grid_position: 'PQOIXC,SUHKYP'}
   name: grid_panel_1
   properties: {}

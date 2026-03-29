@@ -40,5 +40,5 @@ class ReportItem(ReportItemTemplate):
 
     anvil.server.call("add_item", item_dict)
 
-    alert("Item submitted!")
+    alert("Item submitted for Admin Approval!")
     open_form('Main')

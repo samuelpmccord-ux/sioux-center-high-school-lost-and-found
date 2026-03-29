@@ -29,3 +29,8 @@ class ItemRow(ItemRowTemplate):
     self.description_label.text = f"Item Description:  {row['description']}"
     self.image_display.source = row ["image"]
 
+  @handle("delete_button", "click")
+  def delete_button_click(self, **event_args):
+    if confirm("Are you sure you want to delete this item?"):
+      anvil.server.call('delete_item', self.item.get_id())
+      self.parent.raise_event('x-refresh')
